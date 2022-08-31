@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projets</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/Page gris ou blanc.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id='body' class="white-preview">
+    <!-- haut de page -->
+<header>
+    <!--logo-->
+    <img class="left" src="image-archi/Logo.jpg" width="110px" height="110px">
+    <!--Switch gris/blanc-->
+            <div class="btn-container">
+                <i class="fa fa-sun-o" ></i>
+                     <label class="switch btn-color-mode-switch">
+                        <input type="checkbox" name="color_mode" id="color_mode" value="1">
+                        <label onclick="changeColor()" for="color_mode" data-on="Dark" data-off="Light" class="btn-color-mode-switch-inner"></label>
+                    </label>
+                <i class="fa fa-moon-o" ></i>
+            </div>
+            <br><br>
+    <!--btn Acceuil/Projets/Contact-->
+    <div class="left" style="left: 800px;">
+        <nav class="menu-nav">
+            <ul id="menu-demo2">
+                <li class="btn">
+                    <a href="index.html">
+                        Accueil
+                    </a>
+                </li>
+                <li class="btn deroulant"><a href="Projets.html">Projets</a>
+                    <ul class="sous" style="position: absolute; width: 25%; margin-left: 25%;">
+                        <a href="MAISON INDIVIDUELLE.html">
+                            MAISON INDIVIDUELLE</a>
+                        <a href="ENSEMBLE COLLECTIF.html">
+                            ENSEMBLE COLLECTIF</a>
+                        <a href="RENOVATION.html">
+                            RENOVATION</a>
+                    </ul>
+                </li>
+                <li class="btn">
+                    <a href="Contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li class="btn">
+                    <a href="A-propos.html">
+                       A propos 
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<br><br><br>
+    
+<div class="center img">
+    <div class="img">
+        <div>
+            <a href="MAISON INDIVIDUELLE.html">
+                <img src="image-archi/MAISON INDIVIDUELLE.jpg" alt="img" width="1750px" height="600px" id="image" style="margin: 0 auto;">
+                <h1 class="text img1">MAISON INDIVIDUELLE</h1>
+            </a>
+            <a href="ENSEMBLE COLLECTIF.html">
+                <img src="image-archi/ENSEMBLE COLLECTIF.jpg" alt="img" width="1750px" height="600px" id="image" style="margin: 0 auto;">
+                <h1 class="text img2">ENSEMBLE COLLECTIF</h1>
+            </a>
+            <a href="RENOVATION.html">
+                <img src="image-archi/RENOVATION.jpg" alt="img" width="1750px" height="600px" id="image" style="margin: 0 auto;">
+                <h1 class="text img3">RENOVATION</h1>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Copyright -->
+<footer>
+    Copyright &copy 2AC - 2022-2023 - All Right Reserved
+</footer>
+</body>
+</html>

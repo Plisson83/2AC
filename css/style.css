@@ -1,0 +1,553 @@
+div#content div{
+    display: inline-block;
+}
+
+.left{
+    float: left;
+    color: black;
+}
+.right{
+    float: right;
+    color: white;
+}
+.center{
+    display:inline-block;
+    text-align: center;
+}
+.center.img{
+    position: relative;
+    margin: 0 auto;
+}
+.img{
+    width: 1900px;
+    height:600px;
+}
+.text{
+    color: black;
+}
+.text.img1{
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    margin-bottom: 2cm;
+    color: rgb(43, 42, 42);
+}
+.text.img2{
+    position: absolute;
+    top: 160%;
+    width: 43%;
+    margin-bottom: 2cm;
+    color: rgb(43, 42, 42);
+
+}
+.text.img3{
+    position: absolute;
+    top: 285%;
+    width: 34%;
+    color: rgb(43, 42, 42);
+}
+#image:hover{
+    transition: all 1s ease-in;
+    filter: blur(6px);
+}
+#coordonnés {
+    padding: 10px;
+    margin-left: 10%;
+    border: 5px outset black;
+}
+#formulaire {
+    color: black;
+    margin-right: 10%; 
+    margin-top: 5%;
+    border: 5px outset black;
+}
+.nopoint{
+    list-style-type: none;
+}
+/* ------------------------------------------------------------------------ change couler site ------------------------------------------------------------------------------------- */
+nav.menu-nav ul li.btn{
+    display: inline-block;
+    list-style-type: none;
+    width: 200px;
+}
+nav.menu-nav ul li.btn a{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+nav.menu-nav ul li.btn:hover a{
+    color: white;
+    background-color: grey;
+    transition: 0.5s all;
+}
+/*---------------------------------------------------------------------------- aspect switch gris/blanc -----------------------------------------------------------------------------*/
+div.btn-container i{
+    display: inline-block;
+    position: relative;
+    top: -9px;
+}
+label {
+    font-size: 13px;
+    color: #424242;
+    font-weight: 500;
+}
+.btn-color-mode-switch{
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+}
+.btn-color-mode-switch > label.btn-color-mode-switch-inner{
+    margin: 0px;
+    width: 140px;
+    height: 30px;
+    background: #E0E0E0;
+    border-radius: 26px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
+    display: block;
+}
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
+    content: attr(data-on);
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    top: 7px;
+    right: 20px;
+
+}
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
+    content: attr(data-off);
+    width: 70px;
+    height: 16px;
+    background: #fff;
+    border-radius: 26px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 6px -2px #111;
+    padding: 5px 0px;
+}
+.btn-color-mode-switch input[type="checkbox"]{
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 0px;
+}
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner{
+    background: #151515;
+    color: #fff;
+}
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
+    content: attr(data-on);
+    left: 68px;
+    background: #3c3c3c;
+}
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before{
+    content: attr(data-off);
+    right: auto;
+    left: 20px;
+}
+.white-preview div.btn-container i.fa-sun-o{
+    color: #ffa500;
+    text-shadow: 0px 0px 16px #ffa500;
+}
+/* ----------------------------------------------------------------------- menu Contact/Projets/Accueil --------------------------------------------------------------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+nav{
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+nav a:hover{
+    border-bottom: 2px solid gold;
+}
+/* -------------------------------------------------------------------------------- menu deroulant -------------------------------------------------------------------------------- */
+#menu-demo2 ul{
+    position:relative;
+    max-height:0;
+    left: 0;
+    right: 0;
+    overflow:hidden;
+    -moz-transition: .8s all;
+    -webkit-transition: .8s all;
+    transition: .8s all;
+    }
+    #menu-demo2 li:hover ul{
+    max-height:15em;
+    }
+
+.sous a:hover{
+    position: relative;
+    border-bottom: 2px solid gold;
+    background-color:rgb(104, 104, 104);
+}
+.btn.deroulant > a::after{
+    content: " ◀";
+    font-size: 10px;
+    position: absolute;
+
+}
+.btn.deroulant > a:hover::after{
+    content:" ▼";
+    font-size: 10px;
+    position: absolute;
+}
+
+/* ---------------------------------------------------------------------------- animation page acceuil ----------------------------------------------------------------------------------------- */
+#fond-anim{
+    width: 100%;
+    height: 830px;
+    background-color: white;
+    display: flex;
+}
+.animation_bas{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: ease-in-out;
+    animation: fadeIn ease 6s;
+    -webkit-animation: fadeIn ease 6s;
+    -moz-animation: fadeIn ease 6s;
+    -o-animation: fadeIn ease 6s;
+    -ms-animation: fadeIn ease 6s;
+    animation-fill-mode: forwards
+}
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+        right: 0px;
+        width: 0px;
+      }
+      20% {
+          opacity:0;
+          right: 0px;
+          width: 0px;
+      }
+      80%{
+          opacity: 0.75;
+      }
+      90%{
+          opacity: 0.85;
+      }
+      100% {
+        opacity:1;
+        right: 0px;
+        width: 90%;
+      }
+}
+@-moz-keyframes fadeIn {
+    0% {
+        opacity:0;
+        right: 0px;
+        width: 0px;
+      }
+      20% {
+          opacity:0;
+          right: 0px;
+          width: 0px;
+      }
+      80%{
+          opacity: 0.75;
+      }
+      90%{
+          opacity: 0.85;
+      }
+      100% {
+        opacity:1;
+        right: 0px;
+        width: 90%;
+      }
+}
+@-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+      right: 0px;
+      width: 0px;
+    }
+    20% {
+        opacity:0;
+        right: 0px;
+        width: 0px;
+    }
+    80%{
+        opacity: 0.75;
+    }
+    90%{
+        opacity: 0.85;
+    }
+    100% {
+      opacity:1;
+      right: 0px;
+      width: 90%;
+    }
+}
+@-o-keyframes fadeIn {
+    0% {
+        opacity:0;
+        right: 0px;
+        width: 0px;
+      }
+      20% {
+          opacity:0;
+          right: 0px;
+          width: 0px;
+      }
+      80%{
+          opacity: 0.75;
+      }
+      90%{
+          opacity: 0.85;
+      }
+      100% {
+        opacity:1;
+        right: 0px;
+        width: 90%;
+      }
+}
+@-ms-keyframes fadeIn {
+    0% {
+        opacity:0;
+        right: 0px;
+        width: 0px;
+      }
+      20% {
+          opacity:0;
+          right: 0px;
+          width: 0px;
+      }
+      80%{
+          opacity: 0.75;
+      }
+      90%{
+          opacity: 0.85;
+      }
+      100% {
+        opacity:1;
+        right: 0px;
+        width: 90%;
+      }
+}
+.animation_haut{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: ease-in-out;
+    animation: fadeOut ease 6s;
+    -webkit-animation: fadeOut ease 6s;
+    -moz-animation: fadeOut ease 6s;
+    -o-animation: fadeOut ease 6s;
+    -ms-animation: fadeOut ease 6s;
+    animation-fill-mode: forwards
+}
+@keyframes fadeOut {
+    0% {
+        opacity:0;
+        left: 0px;
+        width: 0px;
+    }
+    20% {
+        opacity:0;
+        left: 0px;
+        width: 0px;
+    }
+    80%{
+        opacity: 0.75;
+    }
+    90%{
+        opacity: 0.85;
+    }
+    100% {
+        opacity:1;
+        left: 0px;
+        width: 90%;
+    }
+}
+@-moz-keyframes fadeOut {
+    0% {
+        opacity:0;
+        left: 0px;
+        width: 0px;
+    }
+    20% {
+        opacity:0;
+        left: 0px;
+        width: 0px;
+    }
+    80%{
+        opacity: 0.75;
+    }
+    90%{
+        opacity: 0.85;
+    }
+    100% {
+        opacity:1;
+        left: 0px;
+        width: 90%;
+    }
+}
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity:0;
+        left: 0px;
+        width: 0px;
+    }
+    20% {
+        opacity:0;
+        left: 0px;
+        width: 0px;
+    }
+    80%{
+        opacity: 0.75;
+    }
+    90%{
+        opacity: 0.85;
+    }
+    100% {
+        opacity:1;
+        left: 0px;
+        width: 90%;
+    }
+}
+@-o-keyframes fadeOut {
+    0% {
+        opacity:0;
+        left: 0px;
+        width: 0px;
+    }
+    20% {
+        opacity:0;
+        left: 0px;
+        width: 0px;
+    }
+    80%{
+        opacity: 0.75;
+    }
+    90%{
+        opacity: 0.85;
+    }
+    100% {
+        opacity:1;
+        left: 0px;
+        width: 90%;
+    }
+}
+@-ms-keyframes fadeOut {
+    0% {
+        opacity:0;
+        left: 0px;
+        width: 0px;
+    }
+    20% {
+        opacity:0;
+        left: 0px;
+        width: 0px;
+    }
+    80%{
+        opacity: 0.75;
+    }
+    90%{
+        opacity: 0.85;
+    }
+    100% {
+        opacity:1;
+        left: 0px;
+        width: 90%;
+    }
+}
+/*------------------------------------------------------------------------------ Sous l'animation -----------------------------------------------------------------------------------*/
+
+#fond-text-img{
+    position: absolute;
+    height: 40%;
+    width: 95%;
+    border: 5px ;
+    border-radius: 40px 40px 40px 40px;
+    margin-top: 66%;
+    margin-left: 50px;
+}
+
+#text-gauche{
+    position: absolute;
+    left: 250px;
+    margin-top: 50px;
+    align-items: center;
+}   
+
+#image-droit{
+    width: 710px;
+    height: 100%;
+    margin-left: 43.6%;
+    border-radius: 40px 40px 40px 40px;
+}
+
+#text-droit{
+    position: absolute;
+    right: 250px;
+    margin-top: 50px;
+    align-items: center;
+}
+
+#image-gauche{
+    width: 710px;
+    height: 100%;
+    border-radius: 40px 40px 40px 40px;
+}
+
+/*------------------------------------------------------------ page Renovation/Ensemble Collectif/Maison Individuelle ---------------------------------------------------------------*/
+#text-gauche-REM{
+    position: absolute;
+    margin-top: 20px;
+    left: 250px;
+    align-items: center;
+}   
+
+#image-droit-REM{
+    width: 710px;
+    height: 100%;
+    margin-left: 43.6%;
+    border-radius: 40px 40px 40px 40px;
+    align-items: center;
+}
+#fond-text-img-REM{
+    position: absolute;
+    height: 80%;
+    width: 95%;
+    border: 5px ;
+    background-color: aqua;
+    border-radius: 40px 40px 40px 40px;
+    margin-left: 50px;
+}
